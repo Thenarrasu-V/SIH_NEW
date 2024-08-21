@@ -1,0 +1,284 @@
+.organization-container {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background: #f4f4f4;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropdown-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.page-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.industry-dropdown {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.customize-button,
+.scan-button {
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  color: white;
+}
+
+.customize-button {
+  background-color: #007bff;
+}
+
+.scan-button {
+  background-color: #28a745;
+}
+
+.customize-options {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.add-rule-button,
+.add-custom-rule-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 5px;
+  border: none;
+  border-radius: 4px;
+}
+
+.add-custom-rule-button label {
+  cursor: pointer;
+}
+
+.rule-selection {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.rule-item {
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.submit-rules-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.scan-results {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.scan-result {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.result-check {
+  flex: 1;
+}
+
+.result-status {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.result-status.checking {
+  color: #6c757d;
+}
+
+.result-status.safe {
+  color: green;
+}
+
+.result-status.unsafe {
+  color: red;
+}
+
+.export-pdf-button {
+  padding: 12px 20px;
+  font-size: 16px;
+  background-color: #ffc107;
+  color: black;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 20px;
+}
+.scan-result {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  border-bottom: 1px solid #ccc;
+}
+
+.result-check {
+  flex-grow: 1;
+}
+
+.result-status {
+  margin-left: 20px; /* Adjust this value to increase/decrease the gap */
+}
+
+.result-status.safe {
+  color: green;
+}
+
+.result-status.unsafe {
+  color: red;
+}
+
+.result-status.checking {
+  color: black;
+}
+.export-button {
+  background-color: #007bff; /* Blue background color */
+  color: white; /* White text color */
+  border: none; /* Remove border */
+  border-radius: 4px; /* Rounded corners */
+  padding: 10px 20px; /* Padding for top-bottom and left-right */
+  font-size: 16px; /* Font size */
+  font-weight: bold; /* Bold text */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.export-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.export-button:focus {
+  outline: none; /* Remove default focus outline */
+  box-shadow: 0 0 0 3px rgba(38, 143, 255, 0.5); /* Blue shadow for focus */
+}
+/* Add more specific styling to improve readability */
+.scan-results {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 800px;
+}
+
+.scan-result {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.result-check {
+  flex: 1;
+}
+
+.result-status {
+  font-weight: bold;
+}
+
+.result-status.safe {
+  color: green;
+}
+
+.result-status.unsafe {
+  color: red;
+}
+
+.result-status.checking {
+  color: orange;
+}
+
+.export-button {
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  background-color: #007bff; /* Blue color for export button */
+}
+/* General container styling */
+.rules-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* List styling */
+.rules-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* List item styling */
+.rules-list-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  border-bottom: 1px solid #ddd;
+  transition: background-color 0.3s, transform 0.2s;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+.rules-list-item:last-child {
+  border-bottom: none;
+}
+
+.rules-list-item:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.02);
+}
+
+/* Icon styling (if applicable) */
+.rules-list-item .icon {
+  margin-right: 10px;
+  font-size: 20px;
+  color: #007bff;
+}
+
+/* Text styling */
+.rules-list-item .text {
+  font-size: 16px;
+  color: #333;
+}
+
+/* Optional: Additional details or description */
+.details {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #fff;
+  font-size: 14px;
+  color: #555;
+}
